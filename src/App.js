@@ -7,7 +7,7 @@ import "./containers/styles.css";
 
 function App() {
   return (
-    <div style={{ width: "85%", margin: "auto", padding: 40 }}>
+    <div style={{ width: "82%", margin: "auto", padding: 40 }}>
       <Grid>
         <Grid.Row>
           <Grid.Column width={16}>
