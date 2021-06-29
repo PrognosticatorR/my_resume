@@ -5,12 +5,12 @@ export default class SidebarItem extends Component {
   renderSkills = () => {
     const { data } = this.props;
     return data.map(({ id, items, title }) => (
-      <List ordered>
-        <div key={id + title}>
+      <List key={id + title} ordered>
+        <div>
           <p style={{ fontSize: 20, margin: 0 }}>{id + ".  " + title}</p>
           <p style={{ paddingLeft: 20 }}>
-            {items.map((li) => (
-              <span>{li + ", "}</span>
+            {items.map((li, i) => (
+              <span key={li + i}>{li + ", "}</span>
             ))}
           </p>
         </div>
