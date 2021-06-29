@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { data, education } from "../data/content";
 import ContentItem from "../components/ContentItem";
 
@@ -13,7 +13,7 @@ class Content extends Component {
   }
   render() {
     return (
-      <>
+      <Fragment>
         <div>
           <h3
             className="header_text"
@@ -43,7 +43,7 @@ class Content extends Component {
             {this.renderEdu()}
           </div>
         </div>
-      </>
+      </Fragment>
     );
   }
 }
